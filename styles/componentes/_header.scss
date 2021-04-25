@@ -1,1 +1,43 @@
 @use"../variables/varaibles" as *;
+
+.header__container{
+    background-color: $background-color-2;
+}
+
+.header{
+    color:$primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    &__title{
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        gap:0.5rem;
+
+        &--logo{
+            // fill:$primary-color;
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+    &__nav{
+        display: flex;
+        gap:4rem;  
+        &--links{
+            color:$primary-color;
+            transition: all 0.4s ease-in-out;
+            padding:5px;
+            border-radius: 5px;
+            &:hover{
+                
+                
+                background-color: $background-color;
+                color:$alternative-color;
+            }
+            
+        }
+    }
+}
