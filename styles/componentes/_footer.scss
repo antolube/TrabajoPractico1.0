@@ -8,9 +8,25 @@
 }
 
 .footer{
-    color:$alternative-color;
+    color:$acent-color-2;
     display:flex;
     align-items: center;
     justify-content: space-between;
+
+    &__autor{
+
+    }
+    &__addres{
+    }
+
+    &__redes{
+
+        &--link{
+            transition: all 0.3s ease-in-out;
+            &:hover{
+            color:$black;
+            }  
+        }
+    }
 
 }

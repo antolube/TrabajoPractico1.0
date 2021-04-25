@@ -33,6 +33,32 @@
   color: #80A236;
 }
 
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main__hero {
+  height: calc(100vh - 8rem);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../../assets/hero.jpg);
+  background-position: center;
+  background-size: contain;
+}
+.main__hero__title {
+  color: #A8BA28;
+  font-size: 8rem;
+  text-align: center;
+}
+.main__hero__description {
+  color: #30F2F2;
+  font-size: 2rem;
+}
+
 .footer__container {
   background-color: #3D0E61;
   position: absolute;
@@ -41,10 +67,16 @@
 }
 
 .footer {
-  color: #80A236;
+  color: #6ea0c4;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.footer__redes--link {
+  transition: all 0.3s ease-in-out;
+}
+.footer__redes--link:hover {
+  color: #111;
 }
 
 *, *::before, *::after {

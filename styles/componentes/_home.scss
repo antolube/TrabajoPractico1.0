@@ -1,1 +1,34 @@
 @use"../variables/varaibles" as *;
+
+.main__container{
+    // background-color: $white;
+}
+
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__hero{
+        height:calc(100vh - 8rem);
+        display:flex;
+        justify-content:flex-start;
+        align-items: center;
+        flex-direction: column;
+        background-image: url(../../assets/hero.jpg);
+        background-position: center;
+        background-size: contain;
+        
+        &__title{
+            color:$secundary-color;
+            font-size: 8rem;
+            text-align: center;
+            
+
+        }
+        &__description{
+            color:$acent-color;
+            font-size: 2rem;
+        }
+    }
+}
