@@ -1,34 +1,146 @@
 @use"../variables/varaibles" as *;
-
-.main__container{
-    // background-color: $white;
-}
-
-.main{
+//-----------HERO-----------//
+.hero{
+    height:calc(100vh - 8rem);
     display:flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     flex-direction: column;
-    &__hero{
-        height:calc(100vh - 8rem);
-        display:flex;
-        justify-content:flex-start;
-        align-items: center;
-        flex-direction: column;
-        background-image: url(../../assets/hero.jpg);
-        background-position: center;
-        background-size: contain;
-        
-        &__title{
-            color:$secundary-color;
-            font-size: 8rem;
-            text-align: center;
-            
-
-        }
-        &__description{
-            color:$acent-color;
-            font-size: 2rem;
-        }
+    background-image: url(../../assets/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    .font-effect-neon{
+        text-align: center;
+    }
+    &__title{
+        color:#cc0af3b0;
+        font-size: 9rem;
+        text-align: center;
+    }
+    &__description{
+        color:$acent-color;
+        font-size: 2rem;
+        text-align: center;
     }
 }
+
+//---------Products-------//
+.product__container{
+    background-color: background-color;
+    padding: 5rem 0;
+
+}
+
+.products{
+    display:flex;
+    flex-wrap: wrap;
+    // justify-content:space-between;
+    row-gap: 5rem;
+    column-gap: 2rem;
+    color:$secundary-color;
+    
+    &__subtitle{
+
+        text-align: center;
+        font-size: 5rem;
+        margin-bottom:5rem;
+        color:$secundary-color;
+        text-decoration: underline;
+        
+    }
+    
+    .product{
+        flex-basis:30%;
+        display: flex;
+        flex-direction:column;
+        gap:3rem;
+        transition: all 0.3s ease-in-out;
+        padding:1rem;
+        border-radius: 1rem;
+
+        &:hover{
+            transform: scale(1.05);
+            background-color: rgba($background-color-2,0.5);
+            
+        }
+        
+        &__title{
+            align-items: center;
+            h2{
+                margin-top:2rem;
+            }
+            
+            &__historia{
+                gap:2rem;
+                &--name{
+                    gap:2rem;
+            
+                }
+    
+                &--text{
+                    text-align:center;
+                    padding:0 3rem;
+                    margin-top: 10rem;;
+                }
+            }
+        }
+        
+    }
+}
+
+//--------info-------///
+
+.info {
+    padding: 10rem 0;
+    display: flex;
+    gap: 5rem;
+  }
+  .info__container {
+    background-color: #eee;
+    color: #111;
+  }
+  .info__left--img {
+    background-image:url(../../assets/wines.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50rem;
+    height: 40rem;
+    border-radius: 10rem 0 10rem 0;
+  }
+  .info__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info__right--text {
+    width: 80%;
+    font-size: 2rem;
+    line-height: 2;
+    color: #2d3047;
+  }
+  
+  .go-top {
+    position: fixed;
+    bottom: 7.5rem;
+    right: 5rem;
+    width: 7.5rem;
+    height: 7.5rem;
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #ed217c;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+  }
+  .go-top p {
+    color: #eee;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .go-top:hover {
+    background-color: rgba(237, 33, 124, 0.5);
+    transform: scale(0.95);
+    cursor: pointer;
+  }

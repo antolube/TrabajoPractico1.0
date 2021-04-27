@@ -2,7 +2,7 @@
 
 .footer__container{
     background-color: $background-color-2;
-    position: absolute;
+    position:bottom;
     bottom: 0;
     width: 100%;
 }
@@ -16,7 +16,7 @@
     &__autor{
 
     }
-    &__addres{
+    &__description{
     }
 
     &__redes{
