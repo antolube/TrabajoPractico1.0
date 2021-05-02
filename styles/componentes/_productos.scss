@@ -1,0 +1,39 @@
+@use"../variables/varaibles" as *;
+
+.articulo__content{
+    background-color: $secundary-color;
+}
+
+.articulo{
+    display:flex;
+    color:$background-color;
+    gap: 2rem;
+    
+
+
+    &__productos{
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        margin:5rem;
+        align-items: center;
+        justify-content:space-between;
+        &--title{
+           padding:1rem;
+           font-size:1rem;
+        }
+        &--foto{
+            display: flex;
+            align-items:center;
+
+        }
+
+        
+        &--description{
+            font-size: 1rem;
+            
+
+        }
+    }
+
+}
