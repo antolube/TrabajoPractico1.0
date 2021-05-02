@@ -9,9 +9,9 @@
     background-image: url(../../assets/hero.jpg);
     background-position: center;
     background-size: cover;
-    .font-effect-neon{
-        text-align: center;
-    }
+    // .font-effect-neon{
+    //     text-align: center;
+    // }
     &__title{
         color:#cc0af3b0;
         font-size: 9rem;
@@ -26,7 +26,7 @@
 
 //---------Products-------//
 .product__container{
-    background-color: background-color;
+    background-color: $color-degrade;
     padding: 5rem 0;
 
 }
@@ -38,6 +38,7 @@
     row-gap: 5rem;
     column-gap: 2rem;
     color:$secundary-color;
+    
     
     &__subtitle{
 
@@ -57,6 +58,10 @@
         transition: all 0.3s ease-in-out;
         padding:1rem;
         border-radius: 1rem;
+        background-image: url(/assets/blank-profile-picture-973461.svg);
+        background-repeat: no-repeat;
+        background-position: 27rem 3rem;
+        background-size: 7rem;
 
         &:hover{
             transform: scale(1.05);
@@ -90,57 +95,99 @@
 
 //--------info-------///
 
-.info {
-    padding: 10rem 0;
+.galeria {
+    
+    padding: 2rem 0;
     display: flex;
+    display: column;
     gap: 5rem;
+    
+    
   }
-  .info__container {
+  .galeria__container {
+    
     background-color: #eee;
     color: #111;
   }
-  .info__left--img {
+  .galeria__left--img {
     background-image:url(../../assets/wines.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50rem;
-    height: 40rem;
+    width: 40rem;
+    height: 30rem;
     border-radius: 10rem 0 10rem 0;
   }
-  .info__right {
+  .galeria__right {
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
-  .info__right--text {
+  .galeria__right--text {
     width: 80%;
     font-size: 2rem;
     line-height: 2;
     color: #2d3047;
   }
-  
-  .go-top {
-    position: fixed;
-    bottom: 7.5rem;
-    right: 5rem;
-    width: 7.5rem;
-    height: 7.5rem;
-    z-index: 999;
-    display: none;
+
+  .galeria2 {
+    padding: 5rem 0;
+    display: flex;
+    display:column;
+    gap: 5rem;
+  }
+  .galeria2__container {
+    
+    background-color: #eee;
+    color: #111;
+  }
+  .galeria2__right--img {
+    background-image:url(../../assets/wine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40rem;
+    height: 30rem;
+    border-radius: 10rem 0 10rem 0;
+  }
+  .galeria2__left {
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ed217c;
-    padding: 1rem;
-    border-radius: 50%;
-    transition: all 0.2s linear;
-  }
-  .go-top p {
-    color: #eee;
+    
+  .galeria2__left--text {
+    width: 80%;
     font-size: 2rem;
-    text-align: center;
+    line-height: 2;
+    color: #2d3047;
   }
-  .go-top:hover {
-    background-color: rgba(237, 33, 124, 0.5);
+}
+.go-top {
+  position:fixed;
+  bottom:10rem;
+  right:2rem;
+  width:7.5rem;
+  height: 7.5rem;
+  z-index: 999;
+  display:none;
+  align-items: center;
+  justify-content: center;
+  background-color: $background-color;
+  border-radius:50%;
+  padding: 1rem;
+  transition: all 0.2s linear;
+  background-image: url(/assets/keyboard_arrow_up_black_24dp.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:hover {
+    background-color:$secundary-color;
     transform: scale(0.95);
-    cursor: pointer;
-  }
+    cursor:pointer;
+}
+  p{
+    color:$alternative-color;
+    font-size:2rem;
+    text-align: center;
+}
+ 
+}

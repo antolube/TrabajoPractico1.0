@@ -1,5 +1,5 @@
 .header__container {
-  background-color: #3D0E61;
+  background-color: background linear-gradient(to left, #1f4037, #99f2c8);
 }
 
 .header {
@@ -43,9 +43,6 @@
   background-position: center;
   background-size: cover;
 }
-.hero .font-effect-neon {
-  text-align: center;
-}
 .hero__title {
   color: #cc0af3b0;
   font-size: 9rem;
@@ -58,7 +55,7 @@
 }
 
 .product__container {
-  background-color: background-color;
+  background-color: background linear-gradient(to left, #1f4037, #99f2c8);
   padding: 5rem 0;
 }
 
@@ -85,6 +82,10 @@
   transition: all 0.3s ease-in-out;
   padding: 1rem;
   border-radius: 1rem;
+  background-image: url(/assets/blank-profile-picture-973461.svg);
+  background-repeat: no-repeat;
+  background-position: 27rem 3rem;
+  background-size: 7rem;
 }
 .products .product:hover {
   transform: scale(1.05);
@@ -108,33 +109,67 @@
   margin-top: 10rem;
 }
 
-.info {
-  padding: 10rem 0;
+.galeria {
+  padding: 2rem 0;
   display: flex;
+  display: column;
   gap: 5rem;
 }
 
-.info__container {
+.galeria__container {
   background-color: #eee;
   color: #111;
 }
 
-.info__left--img {
+.galeria__left--img {
   background-image: url(../../assets/wines.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 50rem;
-  height: 40rem;
+  width: 40rem;
+  height: 30rem;
   border-radius: 10rem 0 10rem 0;
 }
 
-.info__right {
+.galeria__right {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.info__right--text {
+.galeria__right--text {
+  width: 80%;
+  font-size: 2rem;
+  line-height: 2;
+  color: #2d3047;
+}
+
+.galeria2 {
+  padding: 5rem 0;
+  display: flex;
+  display: column;
+  gap: 5rem;
+}
+
+.galeria2__container {
+  background-color: #eee;
+  color: #111;
+}
+
+.galeria2__right--img {
+  background-image: url(../../assets/wine.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40rem;
+  height: 30rem;
+  border-radius: 10rem 0 10rem 0;
+}
+
+.galeria2__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.galeria2__left .galeria2__left--text {
   width: 80%;
   font-size: 2rem;
   line-height: 2;
@@ -143,30 +178,31 @@
 
 .go-top {
   position: fixed;
-  bottom: 7.5rem;
-  right: 5rem;
+  bottom: 10rem;
+  right: 2rem;
   width: 7.5rem;
   height: 7.5rem;
   z-index: 999;
   display: none;
-  justify-content: center;
   align-items: center;
-  background-color: #ed217c;
-  padding: 1rem;
+  justify-content: center;
+  background-color: #150719;
   border-radius: 50%;
+  padding: 1rem;
   transition: all 0.2s linear;
+  background-image: url(/assets/keyboard_arrow_up_black_24dp.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.go-top p {
-  color: #eee;
-  font-size: 2rem;
-  text-align: center;
-}
-
 .go-top:hover {
-  background-color: rgba(237, 33, 124, 0.5);
+  background-color: #A8BA28;
   transform: scale(0.95);
   cursor: pointer;
+}
+.go-top p {
+  color: #80A236;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .footer__container {
@@ -177,16 +213,59 @@
 }
 
 .footer {
-  color: #6ea0c4;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.footer__redes--link {
+.footer__autor {
+  display: flex;
+  font-size: 2rem;
+}
+.footer__description {
+  display: flex;
+  padding: 2rem;
+}
+.footer__redes {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.footer__redes__link {
   transition: all 0.3s ease-in-out;
 }
-.footer__redes--link:hover {
-  color: #111;
+.footer__redes__link:hover {
+  transform: scale(1.05);
+}
+.footer__redes__link--fc {
+  background-image: url(../../assets/facebook_black_24dp.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5.5rem;
+  height: 5.5rem;
+}
+.footer__redes__link--fc:hover {
+  transform: scale(1.1);
+}
+.footer__redes__link--ig {
+  background-image: url(../../assets/instagram_black_logo_icon_147122.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+.footer__redes__link--ig:hover {
+  transform: scale(1.1);
+}
+.footer__redes__link--tw {
+  background-image: url(../../assets/social_Twitter_38.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+.footer__redes__link--tw:hover {
+  transform: scale(1.1);
 }
 
 *, *::before, *::after {
@@ -202,7 +281,7 @@ html {
 body {
   min-height: 100vh;
   background-color: #150719;
-  font-family: "Sofia", sans-serif;
+  font-family: "Sofia", "sans-serif";
 }
 
 .container {

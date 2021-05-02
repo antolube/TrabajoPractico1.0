@@ -8,25 +8,71 @@
 }
 
 .footer{
-    color:$acent-color-2;
+    color:black;
     display:flex;
     align-items: center;
     justify-content: space-between;
 
     &__autor{
-
+        display:flex;
+        font-size: 2rem;
     }
     &__description{
+        display:flex;
+        padding:2rem;
     }
 
     &__redes{
+        display: flex;
+        justify-content: space-between;
+        gap:5rem;
 
-        &--link{
+        &__link{
             transition: all 0.3s ease-in-out;
             &:hover{
-            color:$black;
-            }  
+                transform: scale(1.05);
+            }
+            
+
+            &--fc{
+                background-image: url(../../assets/facebook_black_24dp.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 5.5rem;
+                height: 5.5rem;
+                &:hover{
+                    transform: scale(1.10);
+                }
+                
+            }
+
+            &--ig{
+                background-image: url(../../assets/instagram_black_logo_icon_147122.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 5rem;
+                height: 5rem;
+                &:hover{
+                    transform: scale(1.10);
+                }
+                
+
+            }
+            &--tw{
+                background-image: url(../../assets/social_Twitter_38.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 5rem;
+                height: 5rem;
+                
+                &:hover{
+                    transform: scale(1.10);
+                }
+                
+            }
+            
         }
+
     }
 
 }
