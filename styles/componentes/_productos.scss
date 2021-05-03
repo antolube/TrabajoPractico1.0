@@ -31,6 +31,36 @@
         color:$white;
         border-radius:5%;
     }
+    &__img2{
+        margin: 1rem;
+        background-image:url(../../assets/wine-186018_1920.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 10rem 
+    }
+    &:hover{
+        transform: scale(1.05);
+        background-color: $background-color;
+        color:$white;
+        border-radius:5%;
+    }
+    &__img3{
+        margin: 1rem;
+        background-image:url(../../assets/rose-1024710_1920.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 10rem 
+    }
+    &:hover{
+        transform: scale(1.05);
+        background-color: $background-color;
+        color:$white;
+        border-radius:5%;
+    }
     p{
         margin:0 0 2rem 2rem;
         text-align: center;
