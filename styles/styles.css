@@ -227,45 +227,60 @@
   gap: 3rem;
   align-items: center;
   transition: all 0.3s ease-in-out;
+  text-align: center;
 }
-.contenedor__img {
+.contenedor__img--a, .contenedor__img--1, .contenedor__img--2, .contenedor__img--3, .contenedor__img--4, .contenedor__img--5, .contenedor__img--6, .contenedor__img--7, .contenedor__img--8, .contenedor__img--9, .contenedor__img--10, .contenedor__img--11 {
   margin: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 10rem;
+  transition: all 0.3s ease-in-out;
+}
+.contenedor__img--a {
   background-image: url(../../assets/wines.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 20rem;
-  height: 20rem;
-  border-radius: 10rem;
+  background-position: -7rem 0;
 }
-.contenedor:hover {
-  transform: scale(1.05);
-  background-color: #150719;
-  color: #eee;
-  border-radius: 5%;
+.contenedor__img--1 {
+  background-image: url(../../assets/copas.jpg);
+  background-position: -4rem 0rem;
 }
-.contenedor__img2 {
-  margin: 1rem;
-  background-image: url(../../assets/wine-186018_1920.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 20rem;
-  height: 20rem;
-  border-radius: 10rem;
+.contenedor__img--2 {
+  background-image: url(../../assets/grapes-1659118_1920.jpg);
+  background-position: -7rem 0rem;
 }
-.contenedor:hover {
-  transform: scale(1.05);
-  background-color: #150719;
-  color: #eee;
-  border-radius: 5%;
+.contenedor__img--3 {
+  background-image: url(../../assets/barrels.jpg);
 }
-.contenedor__img3 {
-  margin: 1rem;
+.contenedor__img--4 {
+  background-image: url(../../assets/champagner-1071356_1920.jpg);
+}
+.contenedor__img--5 {
+  background-image: url(../../assets/kermit-1651615_1920.jpg);
+  background-position: right;
+}
+.contenedor__img--6 {
   background-image: url(../../assets/rose-1024710_1920.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 20rem;
-  height: 20rem;
-  border-radius: 10rem;
+  background-position: center;
+}
+.contenedor__img--7 {
+  background-image: url(../../assets/wine-1.jpg);
+}
+.contenedor__img--8 {
+  background-image: url(../../assets/wine-bottlesjpg.jpg);
+}
+.contenedor__img--9 {
+  background-image: url(../../assets/wine.jpg);
+  background-position: center;
+}
+.contenedor__img--10 {
+  background-image: url(../../assets/uvaBlanca.jpg);
+  background-position: center;
+}
+.contenedor__img--11 {
+  background-image: url(../../assets/uvas.jpg);
+  background-position: center;
 }
 .contenedor:hover {
   transform: scale(1.05);
