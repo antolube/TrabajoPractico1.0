@@ -1,1 +1,60 @@
 @use"../variables/varaibles" as *;
+
+
+
+.formulario{
+    background-image: url("../../assets/barrels.jpg");
+    height: 100vh;
+    background-size: cover;
+
+    &__formu{
+        display: flex;
+        flex-direction: column;
+        width:45rem;
+        margin: auto;
+        background-color: rgba(0,0,0,0.4);
+        padding:0;
+        box-sizing: border-box;
+        align-items: center;
+        opacity:0.5rem;
+        transition: all 0.3 ease-in-out;
+
+
+        h2{
+            padding:1rem;
+            margin:0;
+            text-align:center;
+            font-size:5rem;
+            color:$white;
+        }
+
+        input{
+            width: 90%;
+            margin:2rem;
+            padding: 2rem;
+        }
+
+        textarea{
+            width: 90%;
+            margin:3rem;
+            padding: 3rem;
+        }
+
+        &:hover{
+            opacity:1.0;
+        }
+
+
+    }
+}
+
+
+// form{
+//     width:45rem;
+//     margin: auto;
+//     background-color: rgba(0,0,0,0.4);
+//     padding:1rem 2rem;
+//     box-sizing: border-box;
+// }
+
+

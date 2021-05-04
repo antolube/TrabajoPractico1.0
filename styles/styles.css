@@ -205,6 +205,44 @@
   text-align: center;
 }
 
+.formulario {
+  background-image: url("../../assets/barrels.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+.formulario__formu {
+  display: flex;
+  flex-direction: column;
+  width: 45rem;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0;
+  box-sizing: border-box;
+  align-items: center;
+  opacity: 0.5rem;
+  transition: all 0.3 ease-in-out;
+}
+.formulario__formu h2 {
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+  font-size: 5rem;
+  color: #eee;
+}
+.formulario__formu input {
+  width: 90%;
+  margin: 2rem;
+  padding: 2rem;
+}
+.formulario__formu textarea {
+  width: 90%;
+  margin: 3rem;
+  padding: 3rem;
+}
+.formulario__formu:hover {
+  opacity: 1;
+}
+
 .product__productos {
   background-color: #eee;
   padding: 5rem 0;
