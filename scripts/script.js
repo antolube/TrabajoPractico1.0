@@ -12,16 +12,3 @@ window.onscroll = () => {
     : (goTopBtn.style.display = "none");
 };
 
-// window.onscroll = () => {
-//   if (
-//     document.documentElement.scrollTop >
-//     document.documentElement.clientHeight * 0.7
-//   ) {
-//     testimoniales.classList.add("effect1");
-//   }
-//   if (
-//     document.documentElement.scrollTop >
-//     document.documentElement.clientHeight * 1.5
-//   )
-//     galeria.classList.add("effect1");
-// };
