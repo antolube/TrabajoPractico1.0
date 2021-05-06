@@ -63,7 +63,10 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    margin: 1rem;
+    // background-color:#fff;
+
+   
+    
 
     h1 ,p{
         color:$primary-color;
@@ -77,3 +80,7 @@
     // }
 
 }
+ .footer__redes{
+    margin-right: 1rem;
+    
+ }

@@ -306,10 +306,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
 }
 .yo__descripcion h1, .yo__descripcion p {
   color: #CFD11A;
+}
+
+.footer__redes {
+  margin-right: 1rem;
 }
 
 .articulo {
@@ -430,6 +433,7 @@
 .footer__redes {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 5rem;
 }
 .footer__redes__link {
@@ -473,10 +477,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
 }
 
 body {
