@@ -7,6 +7,7 @@
     height: 100vh;
     background-size: cover;
     
+    
 
     &__formu{
         display: flex;
@@ -24,8 +25,8 @@
         transition: all 0.3s ease-in-out;
         
         &:hover{
-            transform: scale(1.03);
-            opacity:1;
+            // transform: scale(1.03);
+            // opacity:1;
         }
 
         h2{
