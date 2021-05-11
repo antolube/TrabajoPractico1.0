@@ -1,5 +1,5 @@
 .header__container {
-  background-color: background linear-gradient(to left, #1f4037, #99f2c8);
+  background-color: #3D0E61;
 }
 
 .header {
@@ -25,12 +25,13 @@
 .header__nav--links {
   color: #CFD11A;
   transition: all 0.4s ease-in-out;
-  padding: 5px;
+  padding: 0.5rem;
   border-radius: 5px;
 }
 .header__nav--links:hover {
-  background-color: #3D0E61;
-  color: #80A236;
+  transform: scale(1.01);
+  background-color: #eee;
+  color: #3D0E61;
 }
 
 .hero {
@@ -110,6 +111,7 @@
 }
 
 .galeria {
+  font-family: "Sofia", "sans-serif";
   padding: 2rem 0;
   display: flex;
   display: column;
@@ -144,6 +146,7 @@
 }
 
 .galeria2 {
+  font-family: "Sofia", "sans-serif";
   padding: 5rem 0;
   display: flex;
   display: column;
@@ -224,6 +227,51 @@
   color: #CFD11A;
   transition: all 0.3s ease-in-out;
 }
+.formulario__formu:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}
+.formulario__formu h2 {
+  font-size: 6rem;
+}
+.formulario__formu input {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.formulario__formu label {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.formulario__formu textarea {
+  width: 40rem;
+  height: 40rem;
+}
+.formulario__formu--boton {
+  width: 40rem;
+  font-size: 2rem;
+  color: #CFD11A;
+  background-color: #150719;
+}
+
+.formulario {
+  background-image: url("../../assets/barrels.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+.formulario__formu {
+  display: flex;
+  flex-direction: column;
+  width: 45rem;
+  height: 100%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0;
+  box-sizing: border-box;
+  border: #CFD11A solid 0.5rem;
+  align-items: center;
+  color: #CFD11A;
+  transition: all 0.3s ease-in-out;
+}
 .formulario__formu h2 {
   font-size: 6rem;
 }
@@ -247,9 +295,8 @@
 }
 
 .contenedor-slider {
-  width: 90%;
-  max-width: 80rem;
-  margin: auto;
+  width: 100vh;
+  margin: 2rem auto;
   overflow: hidden;
   box-shadow: 0 0 0 1rem #fff, 0 1.5rem 5rem;
   position: relative;
@@ -333,6 +380,8 @@
   align-items: center;
   transition: all 0.3s ease-in-out;
   text-align: center;
+  border: 0.01rem solid black;
+  border-radius: 5%;
 }
 .contenedor__img--a, .contenedor__img--1, .contenedor__img--2, .contenedor__img--3, .contenedor__img--4, .contenedor__img--5, .contenedor__img--6, .contenedor__img--7, .contenedor__img--8, .contenedor__img--9, .contenedor__img--10, .contenedor__img--11 {
   margin: 1rem;
@@ -398,15 +447,19 @@
   text-align: center;
 }
 .contenedor__btn {
+  color: #CFD11A;
   margin: 1.5rem;
   padding: 1.5rem;
   border-radius: 5%;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
+  background-color: #3D0E61;
   transition: all 0.3s ease-in-out;
 }
 .contenedor__btn:hover {
+  color: #111;
   background-color: #CFD11A;
+  transform: scale(1.1);
 }
 
 .footer__container {

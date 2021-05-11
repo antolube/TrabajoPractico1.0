@@ -1,8 +1,8 @@
 @use"../variables/varaibles" as *;
 
 .header__container{
-    // background-color: $background-color-2;
-    background-color: $color-degrade;
+    background-color: $background-color-2;
+    
 }
 
 .header{
@@ -30,11 +30,13 @@
         &--links{
             color:$primary-color;
             transition: all 0.4s ease-in-out;
-            padding:5px;
+            padding: 0.5rem;
             border-radius: 5px;
+            
             &:hover{
-                background-color: $background-color-2;
-                color:$alternative-color;
+                transform: scale(1.01);
+                background-color: $white;
+                color:$background-color-2;
             }
             
         }

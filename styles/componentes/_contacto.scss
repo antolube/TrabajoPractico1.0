@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @use"../variables/varaibles" as *;
 
 
@@ -68,12 +68,6 @@
 //     box-sizing: border-box;
 // }
 
-
-=======
-@use"../variables/varaibles" as *;
-
-
-
 .formulario{
     background-image: url("../../assets/barrels.jpg");
     height: 100vh;
@@ -96,10 +90,7 @@
         color:$primary-color;
         transition: all 0.3s ease-in-out;
         
-        &:hover{
-            // transform: scale(1.03);
-            // opacity:1;
-        }
+        
 
         h2{
             font-size:6rem;
@@ -141,4 +132,4 @@
 // }
 
 
->>>>>>> work
+
